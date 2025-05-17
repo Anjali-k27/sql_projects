@@ -253,3 +253,50 @@ limit 5;
 select round(count(case when arrival_delay + weather_delay + carrier_delay + late_aircraft_delay + air_traffic_delay + security_delay > 0 then 1 end)*100/count(*),2) as percentage_delayed_flights 
 from tutorial.flights;
 
+-- TO DO 
+-- Q49: List flights with a wheels-off time after scheduled departure.
+-- Q50: Find flights with the same origin and destination city.
+-- Q51: Calculate the total air traffic delay by destination state.
+-- Q52: List flights with a flight number divisible by 2.
+-- Q53: Find flights with a departure delay greater than the average departure delay.
+-- Q54: Calculate the minimum actual flight time per origin airport.
+-- Q55: List flights with a wheels-on time before actual arrival time.
+-- Q56: Find flights with a distance less than the average distance.
+-- Q57: Calculate the total carrier delay by origin city.
+-- Q58: List flights with a scheduled flight time greater than 3 hours.
+-- Q59: Rank flights by arrival delay within each origin airport.
+-- Q60: Calculate the running total of flight distances by flight number.
+-- Q61: Find the top 3 flights by departure delay per destination state.
+-- Q62: Calculate the average arrival delay for flights departing within 1 hour of each flight.
+-- Q63: Find flights with above-average arrival delays for their origin airport.
+-- Q64: Calculate the percentage contribution of each flight’s distance to the total distance
+-- Q65: Find the 5th longest flight by actual flight time.
+-- Q66: List flights with consecutive departure times within 30 minutes from the same airport.
+-- Q67: Calculate the month-over-month delay trend (assuming more data).
+-- Q68: Rank flights by distance within each destination city.
+-- Q69: Calculate the cumulative arrival delay by origin airport.
+-- Q70: Find flights with the highest departure delay in each origin state.
+-- Q71: Calculate the moving average of air time for the last 5 flights.
+-- Q72: List flights with below-average distance for their destination airport.
+-- Q73: Find the 3rd shortest flight by scheduled flight time.
+-- Q74: Calculate the difference in arrival delay from the previous flight at the same airport
+-- Q75: List flights with the top 10% of distances.
+-- Q76: Calculate the median departure delay (approximate).
+-- Q77: Find flights with a rank in the top 5 by air time per origin city.
+-- Q78: Write a stored procedure to flag flights with excessive delays (>60 minutes).
+-- Q79: Create a trigger to log flights with weather delays.
+-- Q80: Optimize a slow query for average delays by route.
+-- Q81: Find duplicate flights (same origin, destination, and departure time).
+-- Q82: Pivot delay types by origin airport.
+-- Q83: Analyze long-haul flights (>1500 miles) without using a temporary table.
+-- Q84: Analyze flight efficiency (air time vs. actual flight time).
+-- Q85: Detect outlier flights (delays > 3 standard deviations).
+-- Q86: Find flights with high taxi times (wheels off - departure or arrival - wheels on).
+-- Q87: Calculate the correlation between distance and arrival delay.
+-- Q88: Find flights with multiple delay types.
+-- Q89: Identify flights with inconsistent air time (air time > actual flight time).
+-- Q90: Calculate the average delay by flight number range (e.g., 2450-2475, 2476-2500).
+-- Q91: Find flights with a significant schedule deviation (actual vs. scheduled times).
+-- Q92: Calculate the variance of departure delays by origin airport.
+-- Q93: Find flights with a high proportion of carrier delay to total delay.
+-- Q94: Identify flights with a significant gap between wheels-off and departure time.
